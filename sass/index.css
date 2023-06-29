@@ -1,0 +1,227 @@
+.btn-main {
+  color: white;
+  border-radius: 5px;
+  padding: 0.4rem 2rem;
+  border: 1px solid #0075ff;
+  background-color: #0075ff;
+  transition: color 300ms, background 300ms;
+}
+.btn-main:hover {
+  color: #0075ff;
+  background-color: white;
+}
+
+.btn-main-sm {
+  color: white;
+  border-radius: 5px;
+  padding: 0.1rem 1rem;
+  border: 1px solid #0075ff;
+  background-color: #0075ff;
+  transition: color 300ms, background 300ms;
+  font-size: 0.8rem;
+}
+.btn-main-sm:hover {
+  color: #0075ff;
+  background-color: white;
+}
+
+.btn-sec {
+  color: black;
+  border-radius: 5px;
+  padding: 0.4rem 2rem;
+  border: 1px solid white;
+  background-color: white;
+  transition: color 300ms, background 300ms;
+}
+.btn-sec:hover {
+  color: #444;
+  background-color: trasparent;
+}
+
+.btn-sec-sm {
+  color: black;
+  border-radius: 5px;
+  padding: 0.1rem 1rem;
+  border: 1px solid white;
+  background-color: white;
+  transition: color 300ms, background 300ms;
+  font-size: 0.8rem;
+}
+.btn-sec-sm:hover {
+  color: #444;
+  background-color: trasparent;
+}
+
+.main-menu {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  list-style: none;
+}
+.main-menu li > a {
+  display: block;
+  color: black;
+  font-weight: lighter;
+  text-decoration: none;
+  padding: 0px 20px;
+}
+
+.icon-sm {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgb(185, 184, 184);
+}
+.icon-sm i {
+  color: #0075ff;
+}
+
+.title .subtitle {
+  color: rgb(185, 184, 184);
+}
+
+.feature {
+  text-align: center;
+}
+.feature section {
+  margin-bottom: 4rem;
+}
+.feature section .icon {
+  color: #0075ff;
+  font-size: 5rem;
+  display: block;
+}
+.feature section .description .title {
+  font-weight: 600;
+}
+.feature section .description .text {
+  max-width: 320px;
+  margin: 0px auto;
+  color: #444;
+}
+.feature .cta {
+  display: block;
+  max-width: 320px;
+  color: #0075ff;
+  text-decoration: none;
+}
+
+.icon-desc {
+  text-align: center;
+}
+.icon-desc .icon {
+  display: block;
+  color: #0075ff;
+  font-size: 7rem;
+  margin-bottom: -1rem;
+}
+
+.menuMore {
+  display: none;
+  min-width: 200px;
+  position: absolute;
+  margin-top: 1.5rem;
+  box-shadow: 0px 0px 10px rgb(185, 184, 184);
+  background-color: white;
+}
+.menuMore a {
+  display: block;
+  color: black;
+  font-weight: lighter;
+  text-decoration: none;
+  padding: 10px;
+}
+.menuMore a:hover {
+  color: white;
+  background-color: #0075ff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar-pc {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #ddd;
+}
+.navbar-pc .logo {
+  width: 100px;
+}
+.navbar-pc .logo a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.navbar-pc .logo a img {
+  width: 100%;
+}
+.navbar-pc .menu {
+  width: 45%;
+}
+
+.navbar-mobile .logo {
+  width: 100px;
+}
+.navbar-mobile .logo img {
+  width: 100%;
+}
+
+.sec-home {
+  margin-bottom: 7rem;
+}
+.sec-home .join {
+  max-width: 400px;
+}
+.sec-home .join .join-cta {
+  color: #0075ff;
+}
+
+.sec-features {
+  margin-bottom: 7rem;
+}
+.sec-features .text {
+  max-width: 90%;
+}
+
+.sec-benefits {
+  margin-bottom: 7rem;
+}
+
+.sec-kpis {
+  margin-bottom: 7rem;
+  background-color: #0075ff;
+}
+
+.sec-onboarding {
+  margin-bottom: 7rem;
+}
+.sec-onboarding hr {
+  width: 10%;
+  border: 1px solid rgba(163, 162, 162, 0.774);
+}
+
+.footer-cta {
+  background-color: #F4F7FE;
+}
+.footer-cta .cta {
+  padding-left: 5rem;
+}
+.footer-cta .cta .subtitle {
+  color: rgb(185, 184, 184);
+}
+
+.show {
+  display: block;
+}/*# sourceMappingURL=index.css.map */

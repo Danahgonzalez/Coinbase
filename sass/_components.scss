@@ -1,0 +1,161 @@
+$color-main: #0075ff;
+$light-gray: #444;
+$color-footer: #F4F7FE;
+$shadow: rgb(185, 184, 184);
+
+
+// BTNS
+@mixin btn-base($color,$y,$x,$bg){
+    color: $color;
+    border-radius: 5px;
+    padding: $y $x;
+    border: 1px solid $bg;
+    background-color: $bg;
+    transition: color 300ms, background 300ms;
+}
+
+@mixin btn-hover($colorH,$bgH: trasparent){
+    &:hover{
+        color: $colorH;
+        background-color: $bgH;
+    }
+}
+
+.btn-main{
+    @include btn-base(white, .4rem, 2rem, $color-main);
+    @include btn-hover($color-main, white)
+}
+
+.btn-main-sm{
+    @include btn-base(white, .10rem, 1rem, $color-main);
+    font-size: .8rem;
+    @include btn-hover($color-main, white)
+}
+
+.btn-sec{
+    @include btn-base(black, .4rem, 2rem, white);
+    @include btn-hover($light-gray)
+}
+
+.btn-sec-sm{
+    @include btn-base(black, .10rem, 1rem, white);
+    font-size: .8rem;
+    @include btn-hover($light-gray)
+}
+
+// NAVBAR
+.main-menu{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    list-style: none;
+
+    li{
+
+        > a{
+            display: block;
+            color: black;
+            font-weight: lighter;
+            text-decoration: none;
+            padding: 0px 20px;
+        }
+    }
+}
+
+//ICON
+.icon-sm{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 10px $shadow;
+
+    i{
+        color: $color-main;
+    }
+}
+
+//Title
+.title{
+
+    .subtitle{
+        color: $shadow;
+    }
+}
+
+//FEATURE
+.feature{
+    text-align: center;
+
+    section{
+        margin-bottom: 4rem;
+
+        .icon{
+            color: $color-main;
+            font-size: 5rem;
+            display: block;
+        }
+
+        .description{
+            .title{
+                font-weight: 600;
+            }
+
+            .text{
+                max-width: 320px;
+                margin: 0px auto;
+                color: $light-gray;
+            }
+        }
+    }
+
+    .cta{
+        display: block;
+        max-width: 320px;
+        color: $color-main;
+        text-decoration: none;
+    }
+}
+
+//ICON-DESC
+.icon-desc{
+    text-align: center;
+
+    .icon{
+        display: block;
+        color: $color-main;
+        font-size: 7rem;
+        margin-bottom: -1rem;
+    }
+
+}
+
+//MENUMORE-BASE
+.menuMore{
+    display: none;
+    min-width: 200px;
+    position: absolute;
+    margin-top: 1.5rem;
+    box-shadow: 0px 0px 10px $shadow;
+    background-color: white;
+
+
+    a{
+        display: block;
+        color: black;
+        font-weight: lighter;
+        text-decoration: none;
+        padding: 10px;
+
+        &:hover{
+            color: white;
+            background-color: $color-main;
+        }
+    }
+}
